@@ -86,8 +86,6 @@
     <div class="col-10 fbx-button">
         <a href="#" id="next"></a>
     </div>
-    <!-- <div id="top-mask"></div>
-    <div id="bottom-mask"></div> -->
 
 </div>
 </body>
@@ -120,6 +118,9 @@ $(document).ready(function(){
         if(index===4) {
             $("*[data-i="+index+"] .image").addClass('animate-applist');            
         }
+        if(index===7) {
+            $("*[data-i="+index+"] .image").addClass('animate-applist2');
+        }
     };
 
     $("#prev").on("click", function () {
@@ -132,6 +133,14 @@ $(document).ready(function(){
         var pi = index;
         index = index !== total - 1 ? index + 1 : 0;
         changeSlide(index, pi);
+    });
+    $("body").keyup(function (e) {
+        if (e.keyCode === 39) { //right
+            $("#next").click();
+        }
+        if (e.keyCode === 37) { //left
+            $("#prev").click();
+        }
     });
 });
 </script>

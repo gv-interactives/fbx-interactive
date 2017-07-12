@@ -12,6 +12,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+[data-i] {
+    display: none;
+}
+[data-i="0"] {
+    display: block;
+}
 .container {
     position: relative;
     display: flex;
@@ -48,9 +54,7 @@ img {
 #mobileviewer {
     top: -200px;
     position: relative;
-    padding-left: 10px;
 }
-
 #prev {
   background-image: url(images/button.png);
   width: 26px;
@@ -85,6 +89,7 @@ img {
 }
 #text-panel p {
     margin-top: 15px;
+    color: #2f2f2f;
 }
 #phone-notification-tray {
     position: absolute;
@@ -92,34 +97,27 @@ img {
     top: 13px;
     left: 8px;
 }
-
 @keyframes listofapps {
     from {transform: translate(0,0px);}
     to {transform: translate(0,-420px);}
+}
+@keyframes listofapps2 {
+    from {transform: translate(0,0px);}
+    to {transform: translate(0,-1100px);}
 }
 .animate-applist {
     animation-name: listofapps;
     animation-duration: 6s;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: 10;
+    animation-iteration-count: 6;
     animation-delay: 0.5s;
 }
-#top-mask {
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    height: 50px;
-    z-index: 10;
-    align-self: flex-start;
-}
-#bottom-mask {
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    height: 60px;
-    z-index: 10;
-    align-self: flex-end;
+.animate-applist2 {
+    animation-name: listofapps2;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 6;
+    animation-delay: 0.5s;
 }
