@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ededed;
 }
 [data-i] {
     display: none;
@@ -23,11 +24,8 @@ body {
     display: flex;
     flex-flow: nowrap;
     align-items: center;
-    width: 629px;
-    height: 500px;
-}
-.container, #top-mask, #bottom-mask {
-    background-color: #ededed;
+    width: 100%;
+    height: 630px;
 }
 .col-40 {
     width: 40%;
@@ -39,21 +37,22 @@ img {
     width: 100%;
 }
 .image {
-    width: 199px;
-    top: 13px;
-    left: 8px;
+    width: 277px;
+    top: 19px;
+    left: 11px;
     position: relative;
-
 }
 .image-container {
     position: absolute;
-    width: 216px;
-    height: 390px;
+    width: 300px;
+    height: 542px;
     overflow: hidden;
 }
 #mobileviewer {
-    top: -200px;
-    position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #prev {
   background-image: url(images/button.png);
@@ -80,30 +79,31 @@ img {
 }
 #text-panel {
     align-self: flex-start;
-    margin-top: 80px;
+    margin-top: 200px;
 }
 #text-panel h2 {
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 42px;
+    line-height: 44px;
     color: #00b8c0;
 }
 #text-panel p {
     margin-top: 15px;
     color: #2f2f2f;
+    font-size: 24px;
 }
 #phone-notification-tray {
     position: absolute;
-    width: 199px;
-    top: 13px;
-    left: 8px;
+    width: 277px;
+    top: 19px;
+    left: 10px;
 }
 @keyframes listofapps {
     from {transform: translate(0,0px);}
-    to {transform: translate(0,-420px);}
+    to {transform: translate(0,-590px);}
 }
 @keyframes listofapps2 {
     from {transform: translate(0,0px);}
-    to {transform: translate(0,-1100px);}
+    to {transform: translate(0,-1535px);}
 }
 .animate-applist {
     animation-name: listofapps;
