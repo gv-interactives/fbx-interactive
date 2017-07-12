@@ -48,11 +48,15 @@ img {
     height: 542px;
     overflow: hidden;
 }
+#mobile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #mobileviewer {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    height: 542px;
+    width: 300px;
 }
 #prev {
   background-image: url(images/button.png);
