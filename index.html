@@ -17,6 +17,12 @@
 
     <div id="mobile-container" class="col-40">
         <div id="mobileviewer">
+            <div class="image-container" data-i="9">
+            <div class="image">
+                <img src="images/09.png">
+            </div>
+            </div>
+
             <div class="image-container" data-i="8">
             <div class="image">
                 <img src="images/08.png">
@@ -79,8 +85,8 @@
     </div>
 
     <div class="col-40" id="text-panel">
-        <h2>Free Basics by Facebook in Kenya</h2>
-        <p id="text">Any mobile phone user who subscribes to Airtel in Kenya can download Free Basics from the Google Play store.</p>
+        <h2>What does Free Basics look like in Kenya?</h2>
+        <div id="text"><p>If you subscribe to Airtel in Kenya, you can use Free Basics.</p><p>If you do not have an internet connection, you can purchase a SIM card that auto-loads the Free Basics app onto your phone.</p><p>If you have a WiFi or mobile data connection, you can download Free Basics from the Google Play store.</p></div>
     </div>
 
     <div class="col-10 fbx-button">
@@ -93,17 +99,18 @@
 <script type="text/javascript">
 $(document).ready(function(){
     var index = 0;
-    var total = 9;
+    var total = 10;
     var text = [
-    "Any mobile phone user who subscribes to Airtel in Kenya can download Free Basics from the Google Play store.",
-    "When you download the app, you are told that it will need access to various pieces of information within your phone. You must accept these conditions in order to proceed.",
-    "When you open the app for the first time, you are invited to visit popular websites for free, and told that by using the app, you consent to Facebook Terms, Data Policy and Cookies Policy, and to receiving SMS notifications from Facebook.",
-    "If you wish to use the app in Kiswahili, you are presented with an identical interface in Kiswahili.",
-    "The main navigation screen of the app presents a list of free services that the user can access, beginning with Facebook. The other options are listed in alphabetical order.",
-    "Websites remove multimedia content, including video and advertisements, on FreeBasics.",
-    "If you select the three small dots in the upper right corner of the screen, you will see a drop-down menu that includes &ldquo;More Free Services.&rdquo;",
-    "This screen presents a longer list of apps, which also appear in alphabetical order.",
-    "Although one can see and experience some of the content in each of these apps, you will encounter barriers. This screen shows the &ldquo;Dream Africa&rdquo; storytelling app."
+    "<p>If you subscribe to Airtel in Kenya, you can use Free Basics.</p><p>If you do not have an internet connection, you can purchase a SIM card that auto-loads the Free Basics app onto your phone.</p><p>If you have a WiFi or mobile data connection, you can download Free Basics from the Google Play store.</p>",
+    "<p>If you download the app, you are told that it will need access to various types of information within your phone. You must accept these conditions in order to proceed.</p><p>If it is pre-loaded onto your phone, you do not see this permission screen.</p>",
+    "<p>When you open the app for the first time, you are invited to visit popular websites for free. You are told that by using the Free Basics app, you consent to Facebook's standardized Terms, Data Policy and Cookies Policy, and to receiving SMS notifications from Facebook.</p>",
+    "<p>The main navigation screen of the app presents a list of selected free services that the user can access, beginning with Facebook. The other options are listed in alphabetical order.</p>",
+    "<p>If you wish to use the app in Kiswahili, you are presented with an identical interface in Kiswahili.</p>",
+    "<p>But very few free services are available in the Kiswahili language.</p>",
+    "<p>Free Basics prioritizes services in two tiers. To access a full list of services, users have to locate three small dots in the upper right corner of the screen, and decide to click on them. The criteria for which services are deemed top tier are unspecified.</p>",
+    "<p>This screen presents a longer list of approximately 150 apps, which also appear in alphabetical order. There is no explanation of why services are split into two separate areas of the app.</p>",
+    "<p>Websites remove multimedia content, including video and advertisements, on Free Basics.</p>",
+    "<p>Although one can see and experience some of the content in each of these apps, users will encounter barriers. This screen shows what happens when you click an external link in the &ldquo;Dream Africa&rdquo; storytelling app.</p>"
     ];
     
     var changeSlide = function (index, previous) {
@@ -115,7 +122,7 @@ $(document).ready(function(){
         $("*[data-i="+index+"]").fadeIn(200, function () {
 
         });
-        if(index===4) {
+        if(index===3) {
             $("*[data-i="+index+"] .image").addClass('animate-applist');            
         }
         if(index===7) {
