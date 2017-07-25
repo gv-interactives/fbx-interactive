@@ -7,11 +7,11 @@ html, body {
     height: 100%;
 }
 body {
-    font-family: "Helvetica Neue", "Helvetica", "sans-serif";
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ededed;
+    font-family: sans-serif;
 }
 [data-i] {
     display: none;
@@ -22,30 +22,31 @@ body {
 .container {
     position: relative;
     display: flex;
-    flex-flow: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    height: 630px;
 }
 .col-40 {
     width: 40%;
+    padding: 10px 0;
 }
 .col-10 {
     width: 10%;
+    padding: 10px 0;
 }
 img {
     width: 100%;
 }
 .image {
-    width: 277px;
-    top: 19px;
-    left: 11px;
+    width: 221px;
+    top: 15px;
+    left: 9px;
     position: relative;
 }
 .image-container {
     position: absolute;
-    width: 300px;
-    height: 542px;
+    width: 240px;
+    height: 433px;
     overflow: hidden;
 }
 #mobile-container {
@@ -55,7 +56,7 @@ img {
 }
 #mobileviewer {
     position: relative;
-    height: 542px;
+    height: 433px;
     width: 300px;
 }
 #prev {
@@ -83,31 +84,30 @@ img {
 }
 #text-panel {
     align-self: flex-start;
-    margin-top: 120px;
+    margin-top: 88px;
 }
 #text-panel h2 {
-    font-size: 42px;
-    line-height: 44px;
+    font-size: 32px;
     color: #00b8c0;
 }
 #text-panel p {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #2f2f2f;
-    font-size: 24px;
+    font-size: 16px;
 }
 #phone-notification-tray {
     position: absolute;
-    width: 277px;
-    top: 19px;
-    left: 10px;
+    width: 220px;
+    top: 15px;
+    left: 9px;
 }
 @keyframes listofapps {
     from {transform: translate(0,0px);}
-    to {transform: translate(0,-590px);}
+    to {transform: translate(0,-470px);}
 }
 @keyframes listofapps2 {
     from {transform: translate(0,0px);}
-    to {transform: translate(0,-1535px);}
+    to {transform: translate(0,-1225px);}
 }
 .animate-applist {
     animation-name: listofapps;
@@ -124,4 +124,71 @@ img {
     animation-timing-function: ease-in-out;
     animation-iteration-count: 6;
     animation-delay: 0.5s;
+}
+#attribution {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+#attribution small {
+    color: #b1b1b1;
+    margin-left: 20px;
+}
+@media only screen and (max-width: 610px) {
+    #mobile-container {
+      width: 45%;
+  }
+  #text-panel {
+      width: 35%;
+  }
+  h2 {
+      font-size: 18px !important;
+  }
+  p {
+      font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 540px) {
+
+    #mobile-container {
+      width: 55%;
+  }
+  #text-panel {
+      width: 25%;
+  }
+  h2 {
+      font-size: 14px !important;
+  }
+  p {
+      font-size: 11px !important;
+  }
+  small {
+      font-size: 9px;
+  }
+}
+#embedcode {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 1;
+    top: 0;
+}
+#embedcode small {
+    display: block;
+    margin-top: 10px;
+}
+#embedcode #code {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    background-color: white;
+    padding: 11px;
+} 
+a {
+  text-decoration: none;
+  color: #cb2128
 }
