@@ -10,7 +10,16 @@
   crossorigin="anonymous"></script>
 <body>
 <div class="container">
-    
+
+    <div id="embedcode">
+        <div id="code">
+            <code>&lt;iframe src="https://gv-interactives.github.io/fbx-interactive/kenya" name="fbxinteractive" width="100%" height="504px" frameborder="no" scrolling="no" align="center"&gt;&lt;/iframe&gt;</code>
+            
+            <small><a href="#" id="close-embed">Close</a></small>
+            
+        </div>
+    </div>
+
     <div class="col-10 fbx-button">
         <a href="#" id="prev"></a>
     </div>
@@ -93,6 +102,11 @@
         <a href="#" id="next"></a>
     </div>
 
+    <div id="attribution">
+        <img src="images/advox.png" style="  width: 110px;margin-left: 20px;">
+        <span><small>This interactive holds a Creative Commons Attribution 3.0 license. <a href="#" id="show-embed">Embed</a> </small></span>
+    </div>
+
 </div>
 </body>
 
@@ -149,6 +163,13 @@ $(document).ready(function(){
             $("#prev").click();
         }
     });
+    $("#close-embed").on("click", function () {
+        $("#embedcode").fadeOut(200);
+    });
+    $("#show-embed").on("click", function () {
+        $("#embedcode").fadeIn(200);
+    });
+
 });
 </script>
 
