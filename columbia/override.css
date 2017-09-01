@@ -1,0 +1,13 @@
+/* OVERRIDES */
+
+@keyframes listofapps {
+    from {transform: translate(0,0px);}
+    to {transform: translate(0,-557px);}
+}
+@keyframes listofapps2 {
+    from {transform: translate(0,0px);}
+    to {transform: translate(0,-2649px);}
+}
+.animate-applist2 {
+    animation-duration: 35s;
+}
