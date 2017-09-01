@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Basics Kenya Viewer</title>
+    <link rel="stylesheet" type="text/css" href="../common/style.css">
+    <link rel="stylesheet" type="text/css" href="override.css">
+    <meta charset="UTF-8"> 
+</head>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<body>
+<div class="container">
+
+    <div id="embedcode">
+        <div id="code">
+            <code>&lt;iframe src="https://gv-interactives.github.io/fbx-interactive/kenya/ru.html" name="fbxinteractive" width="100%" height="504px" frameborder="no" scrolling="no" align="center"&gt;&lt;/iframe&gt;</code>
+            
+            <small><a href="#" id="close-embed">Close</a></small>
+            
+        </div>
+    </div>
+
+    <div class="col-10 fbx-button">
+        <a href="#" id="prev"></a>
+    </div>
+
+    <div id="mobile-container" class="col-40">
+        <div id="mobileviewer">
+            <div class="image-container" data-i="9">
+            <div class="image">
+                <img src="images/09.png">
+            </div>
+            </div>
+
+            <div class="image-container" data-i="8">
+            <div class="image">
+                <img src="images/08.png">
+            </div>
+            </div>
+
+            <div class="image-container" data-i="7">
+            <div class="image">
+                <img src="images/07.png">
+            </div>
+            </div>
+
+            <div class="image-container" data-i="6">
+            <div class="image">
+                <img src="images/06.png">
+            </div>
+            </div>
+
+            <div class="image-container" data-i="5">
+            <div class="image">
+                <img src="images/05.png">
+            </div>
+            </div>
+
+            <div class="image-container" data-i="4">
+            <div class="image">
+                <img src="images/04.png">
+            </div>
+            </div>
+
+            <div class="image-container" data-i="3">
+            <div class="image">
+                <img src="images/03.png">
+            </div>
+            </div>
+
+            <div class="image-container" data-i="2">
+            <div class="image">
+                <img src="images/02.png">
+            </div>
+            </div>
+
+            <div class="image-container" data-i="1">
+            <div class="image">
+                <img src="images/01.png">
+            </div>
+            </div>
+            
+            <div class="image-container" data-i="0">
+            <div class="image">
+                <img src="images/00.png">
+            </div>
+            </div>
+            
+            <div class="image-container mobile-skin">
+                <img src="../common/images/mobile.png">
+                <img src="../common/images/mobile-tray.png" id="phone-notification-tray">
+            </div>    
+        </div>
+    </div>
+
+    <div class="col-40" id="text-panel">
+        <h2>Как Free Basics выглядит в Кении?</h2>
+        <div id="text"><p>Если вы подключены к мобильному оператору Aritel в Кении, то вы можете использовать Free Basics.</p><p>Если у вас нет доступа в интернет, вы можете приобрести сим-карту, которая автоматически загрузит приложение Free Basics на ваш телефон.</p><p>Если у вас есть WiFi-соединение или мобильный интернет, то вы можете скачать Free Basics из магазина приложений Google Play.</p></div>
+    </div>
+
+    <div class="col-10 fbx-button">
+        <a href="#" id="next"></a>
+    </div>
+
+    <div id="attribution">
+        <img src="../common/images/advox.png">
+        <span>This interactive holds a Creative Commons Attribution 3.0 license. <a href="#" id="show-embed">Embed</a></span>
+    </div>
+
+</div>
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var index = 0;
+    var total = 10;
+    var text = [
+    "<p>Если вы подключены к мобильному оператору Aritel в Кении, то вы можете использовать Free Basics.</p><p>Если у вас нет доступа в интернет, вы можете приобрести сим-карту, которая автоматически загрузит приложение Free Basics на ваш телефон.</p><p>Если у вас есть WiFi-соединение или мобильный интернет, то вы можете скачать Free Basics из магазина приложений Google Play.</p>",
+    "<p>Когда вы скачаете приложение, то увидите, что оно требует доступ к различным видам информации, имеющейся на вашем телефоне. Вы должны принять это условие для продолжения работы с Free Basics.</p><p>Если же приложение было установлено на телефоне изначально, то экрана с подобным пояснением не появится.</p>",
+    "<p>Когда вы в первый раз открываете приложение, то получаете приглашение бесплатно посетить популярные сайты. Вас также уведомят, что, используя Free Basics, вы принимаете стандартные условия и политику cookies Facebook, а также соглашаетесь на то, что социальная сеть будет присылать вам СМС-уведомления.</p>",
+    "<p>Основной навигационный экран приложения предлагает перечень бесплатных сервисов, которыми вы можете пользоваться. Возглавляет список Facebook. Прочие предложения перечислены в алфавитном порядке.</p>",
+    "<p>Интерфейс Free Basics выглядит идентично и для тех, кто хочет работать с приложением на языке суахили.</p>",
+    "<p>Но вот бесплатных сервисов на суахили совсем немного.</p>",
+    "<p>Free Basics разделяет сервисы на две группы, особо выделяя лишь одну из них. Чтобы получить доступ к полному перечню, пользователи должны найти три маленькие точки в верхнем правом углу экрана, а потом нажать на них. Критерии, благодаря которым сервис получает более высокий приоритет, остаются неясными.</p>",
+    "<p>Этот экран показывает длинный список, содержащий около 150 приложений, также размещенных в алфавитном порядке. Нет никакого разумного объяснения, почему сервисы разделены на две группы в рамках одного приложения.</p>",
+    "<p>Для версии Free Basics сайты удаляют мультимедиа-контент, включая видео и рекламу.</p>",
+    "<p>Хотя каждый может получить доступ к информации в рамках предложенных сайтов, тем не менее, пользователям приходится столкнуться с ограничениями. Этот скриншот показывает, что случится, если вы кликните на внешнюю ссылку в рамках приложения Dream Africa.</p>"
+    ];
+    
+    var changeSlide = function (index, previous) {
+        $("#text").fadeOut(300);
+        $("*[data-i="+previous+"]").fadeOut(300, function () {
+            $("#text").html(text[index]);
+            $("#text").fadeIn(300);
+        });
+        $("*[data-i="+index+"]").fadeIn(200, function () {
+
+        });
+        if(index===3) {
+            $("*[data-i="+index+"] .image").addClass('animate-applist');            
+        }
+        if(index===7) {
+            $("*[data-i="+index+"] .image").addClass('animate-applist2');
+        }
+    };
+
+    $("#prev").on("click", function () {
+        var pi = index;
+        index = index ? index - 1 : total - 1;
+        changeSlide(index, pi);
+    });
+
+    $("#next").on("click", function () {
+        var pi = index;
+        index = index !== total - 1 ? index + 1 : 0;
+        changeSlide(index, pi);
+    });
+    $("body").keyup(function (e) {
+        if (e.keyCode === 39) { //right
+            $("#next").click();
+        }
+        if (e.keyCode === 37) { //left
+            $("#prev").click();
+        }
+    });
+    $("#close-embed").on("click", function () {
+        $("#embedcode").fadeOut(200);
+    });
+    $("#show-embed").on("click", function () {
+        $("#embedcode").fadeIn(200);
+    });
+
+});
+</script>
+
+</html>
